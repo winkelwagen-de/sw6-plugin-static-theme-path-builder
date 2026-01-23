@@ -1,0 +1,3 @@
+storefront:
+  theme:
+    theme_path_builder_id: Winkelwagen\DeployerThemePathBuilder\ThemePathBuilder\StaticPathThemePathBuilder

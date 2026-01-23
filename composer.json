@@ -1,0 +1,51 @@
+{
+  "name": "winkelwagen/deployer-theme-path-builder",
+  "description": "Build the theme path based on the static path of the shopware installation",
+  "type": "shopware-platform-plugin",
+  "version": "1.0.0",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Winkelwagen GmbH",
+      "email": "info@winkelwagen.de",
+      "homepage": "https://www.winkelwagen.de"
+    },
+    {
+      "name": "Fabian Blechschmidt",
+      "email": "fabian@winkelwagen.de"
+    }
+  ],
+  "require": {
+    "shopware/core": "~6.6.0",
+    "shopware/storefront": "~6.6.0"
+  },
+  "extra": {
+    "shopware-plugin-class": "Winkelwagen\\DeployerThemePathBuilder\\WinkelwagenDeployerThemePathBuilder",
+    "description": {
+      "de-DE": "Theme Pfad basierend auf dem Shopware Verzeichnis um die Live-Seite während des Deployments nicht zu zerstören. Gleichzeitig wird mit einem neuen Verzeichnis der HTTP Cache aktualisiert",
+      "en-GB": "Theme path based upon Shopware directory to not break prod site on deploy and still bust the cache on new version."
+    },
+    "supportLink": {
+      "de-DE": "https://winkelwagen.de",
+      "en-GB": "https://winkelwagen.de"
+    },
+    "manufacturerLink": {
+      "de-DE": "https://winkelwagen.de",
+      "en-GB": "https://winkelwagen.de"
+    },
+    "label": {
+      "de-DE": "Theme Pfad basierend dauf dem Shopware Pfad",
+      "en-GB": "Theme path based upon Shopware directory"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Winkelwagen\\DeployerThemePathBuilder\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Winkelwagen\\DeployerThemePathBuilder\\Tests\\": "tests/"
+    }
+  }
+}
