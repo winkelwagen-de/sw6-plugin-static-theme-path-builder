@@ -13,12 +13,12 @@ class StaticPathThemePathBuilder extends AbstractThemePathBuilder
 
     public function assemblePath(string $salesChannelId, string $themeId): string
     {
-        $path = realpath(__FILE__);
-        return $this->generateNewPath($salesChannelId, $themeId, $path);
+        return $this->generateNewPath($salesChannelId, $themeId, 'not used - hopefully');
     }
 
     public function generateNewPath(string $salesChannelId, string $themeId, string $seed): string
     {
+        $seed = realpath(__DIR__);
         return Hasher::hash($themeId . $salesChannelId . $seed);
     }
 
