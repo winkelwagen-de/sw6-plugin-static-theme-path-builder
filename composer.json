@@ -2,7 +2,6 @@
   "name": "winkelwagen/deployer-theme-path-builder",
   "description": "Build the theme path based on the static path of the shopware installation",
   "type": "shopware-platform-plugin",
-  "version": "1.0.0",
   "license": "MIT",
   "authors": [
     {
